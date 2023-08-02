@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background: #f18750;
+  min-height: 100vh;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+header .logo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+header #title {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header #title span {
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+header #title img {
+  margin-left: 5px;
+  width: 18px;
+}
+
+#links {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#links .card {
+  background: white;
+  text-align: center;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 2px solid #f0631c;
+  transition: none 0s ease 0s;
+  box-shadow: #f0631c 8px 8px 0px 0px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+
+#links .card:hover {
+  transform: scale(1.05);
+}
+
+#links .card span {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  height: 50px;
+}
+
+footer span {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+@media (max-width: 630px) {
+  #links .card {
+    width: 80%;
+  }
+}
