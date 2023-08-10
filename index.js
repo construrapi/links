@@ -10,7 +10,7 @@ for (const link of links) {
     const card = document.createElement('div');
     card.classList.add("card");
     if(link.url) {
-        card.setAttribute("onclick", `onClick(${link.url})`);   
+        card.setAttribute("onclick", `onClick("${link.url}")`);   
     }
     const span = document.createElement('span');
     span.appendChild(document.createTextNode(link.nome));
