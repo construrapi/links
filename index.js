@@ -1,4 +1,4 @@
-import links from './links.json';
+import links from './links.json' assert { type: "json" };;
 
 const container = document.getElementById('links');
 
