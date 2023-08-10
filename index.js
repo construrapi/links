@@ -6,7 +6,7 @@ for (const link of links) {
     const card = document.createElement('div');
     card.classList.add("card")
     const span = document.createElement('span');
-    span.textContent(link.nome);
+    span.appendChild(document.createTextNode(link.nome));
     card.appendChild(span);
     container.appendChild(card)
 }
