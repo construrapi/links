@@ -1,5 +1,5 @@
 window.onload = async function () {
-    const response = await fetch("./links.jsonn");
+    const response = await fetch("./links.json");
     const data = await response.json();
     
     const container = document.getElementById('links');
