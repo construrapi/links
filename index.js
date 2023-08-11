@@ -9,5 +9,6 @@ for (const link of links) {
     if(link.url) {
         card.setAttribute("href", link.url);   
     }
+    card.setAttribute("target", "_blank");
     container.appendChild(card)
 }
