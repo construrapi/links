@@ -9,11 +9,11 @@ function onClick(link){
 for (const link of links) {
     const card = document.createElement('div');
     card.classList.add("card");
+    const a = document.createElement('a');
+    a.appendChild(document.createTextNode(link.nome));
     if(link.url) {
-        card.setAttribute("onclick", "window.open('" + link.url + "')");   
+        a.setAttribute("href", link.url);   
     }
-    const span = document.createElement('span');
-    span.appendChild(document.createTextNode(link.nome));
     card.appendChild(span);
     container.appendChild(card)
 }
